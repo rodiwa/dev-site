@@ -1,8 +1,9 @@
 version: "3.7"
 services:
   dev-site:
+    build: ./client
     image: nginx:1.18.0-alpine
     volumes:
-      - ./:/usr/share/nginx/html
+      - ./client:/usr/share/nginx/html
     ports:
       - 8080:80
