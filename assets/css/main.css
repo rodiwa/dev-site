@@ -3031,6 +3031,7 @@ input, select, textarea {
 				.features article .image img {
 					border-radius: 5px 5px 0 0;
 					width: 50%;
+					height: 50%;
 					margin: 1.75em;
 				}
 
