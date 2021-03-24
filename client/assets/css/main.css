@@ -3016,6 +3016,17 @@ input, select, textarea {
 				margin-right: 0;
 			}
 
+			.features article p.chip {
+				padding: 1px 10px;
+				display: inline-block;
+				background-color: #9FA8DA;
+				color: black;
+				border-radius: 0.5em;
+				border: none;
+				margin-right: 10px;
+				font-size: 0.9em;
+			}
+
 			.features article .image {
 				border-radius: 5px 5px 0 0;
 				/* display: block; */
