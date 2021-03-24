@@ -19,9 +19,7 @@ app.get('/', (req, res) => {
 
 // mongoose connection
 const MONGOOSE_URI = process.env.MONGOOSE_URI
-const MONGOOSE_URI_TEST = process.env.MONGOOSE_URI_TEST
-const dbUri = process.env.ENV === 'dev' ? MONGOOSE_URI_TEST : MONGOOSE_URI
-mongoose.connect(MONGOOSE_URI_TEST, {
+mongoose.connect(MONGOOSE_URI, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true
