@@ -4040,6 +4040,10 @@ input, select, textarea {
 			width: calc(50% - 1.5em);
 		}
 
+		#footer .inner p#thanks {
+			display: none;
+		}
+
 		#footer .inner .contact {
 			width: calc(50% - 1.5em);
 		}
@@ -4129,7 +4133,7 @@ input, select, textarea {
 			}
 
 				#footer .inner form {
-					margin: 0 0 3em 0;
+					margin: 1em 0 3em 0;
 				}
 
 				#footer .inner .contact {
