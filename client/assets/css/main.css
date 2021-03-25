@@ -3019,13 +3019,20 @@ input, select, textarea {
 			.features article p.chip {
 				padding: 1px 10px;
 				display: inline-block;
-				background-color: #9FA8DA;
-				color: black;
+				background-color: #2e3141;
+				color: white;
 				border-radius: 0.5em;
 				border: none;
 				margin-right: 10px;
 				font-size: 0.9em;
 			}
+
+				.features article p.chip.vertical {
+					display: block;
+					background-color: #2e3141;
+					color: white;
+					text-align: center;
+				}
 
 			.features article .image {
 				border-radius: 5px 5px 0 0;
