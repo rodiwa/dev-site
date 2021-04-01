@@ -20,7 +20,23 @@ jobs:
       SLACK_ICON_EMOJI: ${{ secrets.SLACK_ICON_EMOJI }}
       SLACK_ICON_URL: ${{ secrets.SLACK_ICON_URL }}
     steps:
+      - name: Slack integration
+        uses: act10ns/slack@v1.2.2
+        if: always()
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+      
       - uses: actions/checkout@v2
+      
+      - name: Simple echo
+        run: echo this starts some random task
+        
+      - name: multiline task
+        run: |
+          echo line 1
+          echo line 2
+      
       - name: Slack integration
         uses: act10ns/slack@v1.2.2
         if: always()
