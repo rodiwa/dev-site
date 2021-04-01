@@ -28,7 +28,7 @@ jobs:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
       
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v20
         id: action-checkout
       
       - name: Simple echo
