@@ -2,7 +2,7 @@
 This is a template for dev site for portfolios
 
 # Website
-www.rohitdiwakar.co
+www.rohitdiwakar.com
 
 # Credits
 solid_state@https://html5up.net/
