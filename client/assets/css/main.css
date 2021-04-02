@@ -108,18 +108,6 @@ input, select, textarea {
  center;
 	}
 
-		@media screen and (max-width: 480px) {
-			html, body {
-				background-image: unset;
-			}
-		}
-
-		@media screen and (max-width: 736px) {
-			html, body {
-				background-image: unset;
-			}
-		}
-
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
