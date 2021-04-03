@@ -1,0 +1,50 @@
+name: Simple Slack Integration
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  
+  
+  # best to keep this in the last
+  slack-integrate:
+    runs-on: ubuntu-latest
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      SLACK_BOT_NAME: ${{ secrets.SLACK_BOT_NAME }}
+      SLACK_ICON_EMOJI: ${{ secrets.SLACK_ICON_EMOJI }}
+      SLACK_ICON_URL: ${{ secrets.SLACK_ICON_URL }}
+    steps:
+      - name: Slack integration
+        id: slack-integration-msg-start
+        uses: act10ns/slack@v1.2.2
+        if: always()
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+      
+      - uses: actions/checkout@v2
+        id: action-checkout
+      
+      - name: Simple echo
+        id: simple-echo
+        run: echo this starts some random task
+        
+      - name: multiline task
+        id: simple-echo-multi-line
+        run: |
+          echo line 1
+          echo line 2
+      
+      - name: Slack integration
+        id: slack-integration-msg-end
+        uses: act10ns/slack@v1.2.2
+        if: always()
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
