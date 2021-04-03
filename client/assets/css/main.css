@@ -3643,6 +3643,12 @@ input, select, textarea {
 		}
 	}
 
+	@media screen and (max-width: 768px) {
+		#wrapper > header {
+			background-color: #353849;
+		}
+	}
+
 	@media screen and (max-width: 980px) {
 
 		#wrapper > header {
@@ -4149,6 +4155,12 @@ input, select, textarea {
 			background-position: center, center;
 			margin-top: -6.5em;
 			padding-top: 6.5em;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		#footer {
+			background-color: #353849;
 		}
 	}
 
