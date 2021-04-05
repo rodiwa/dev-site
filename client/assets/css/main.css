@@ -3419,6 +3419,12 @@ input, select, textarea {
 			text-align: center;
 		}
 
+		#banner .inner img#profile-pic {
+			height: 30%;
+			width: 30%;
+			border-radius: 10em;
+		}
+
 		#banner .logo {
 			-moz-transition: opacity 2s ease, -moz-transform 1s ease;
 			-webkit-transition: opacity 2s ease, -webkit-transform 1s ease;
@@ -3511,7 +3517,7 @@ input, select, textarea {
 
 		@media screen and (min-width: 768px) {
 			#banner {
-				padding: 9em 0 6.25em 0 ;
+				padding: 5em 0 6.25em 0 ;
 				background-color: #2e3141;
 				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
 				background-size: auto, cover;
@@ -3523,7 +3529,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#banner {
-				padding: 12em 3em 12.375em 3em ;
+				padding: 5em 3em 12.375em 3em ;
 				margin-bottom: -4.75em;
 			}
 
