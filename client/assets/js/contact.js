@@ -50,11 +50,11 @@ form.addEventListener('submit', (e) => {
 
   const body = JSON.stringify({
     name,
-    email,
+    user_name: email,
     message
   })
 
-  fetch('https://dev-site-email-app.azurewebsites.net/api/addEmail', {
+  fetch('https://contact-form-python.azurewebsites.net/api/orchestrators/HelloOrchestrator', {
       method: 'POST',
       mode: 'no-cors',
       body,
