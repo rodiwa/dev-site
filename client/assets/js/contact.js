@@ -49,8 +49,8 @@ form.addEventListener('submit', (e) => {
   })
 
   const body = JSON.stringify({
-    name,
-    user_name: email,
+    user_name: name,
+    email,
     message
   })
 
