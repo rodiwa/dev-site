@@ -19,15 +19,7 @@ jobs:
       SLACK_BOT_NAME: ${{ secrets.SLACK_BOT_NAME }}
       SLACK_ICON_EMOJI: ${{ secrets.SLACK_ICON_EMOJI }}
       SLACK_ICON_URL: ${{ secrets.SLACK_ICON_URL }}
-    steps:
-      - name: Slack integration
-        id: slack-integration-msg-start
-        uses: act10ns/slack@v1.2.2
-        if: always()
-        with:
-          status: ${{ job.status }}
-          steps: ${{ toJson(steps) }}
-      
+    steps:      
       - uses: actions/checkout@v2
         id: action-checkout
       
