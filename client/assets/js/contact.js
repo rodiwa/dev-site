@@ -7,7 +7,7 @@ const handleFormBehavior = ({
     nameDOM,
     emailDOM,
     messageDOM,
-    infoMessageDOM,
+    // infoMessageDOM,
     thankYouMessageDOM
   } = domItems
 
@@ -15,11 +15,11 @@ const handleFormBehavior = ({
   emailDOM.value = ''
   messageDOM.value = ''
 
-  infoMessageDOM.style.display = 'none'
+  // infoMessageDOM.style.display = 'none'
   thankYouMessageDOM.style.display = 'unset'
 
   setTimeout(() => {
-    infoMessageDOM.style.display = 'unset'
+    // infoMessageDOM.style.display = 'unset'
     thankYouMessageDOM.style.display = 'none'
   }, 3000)
 }
@@ -34,14 +34,24 @@ form.addEventListener('submit', (e) => {
   const email = emailDOM.value
   const message = messageDOM.value
 
-  const infoMessageDOM = document.getElementById('info')
+  // const infoMessageDOM = document.getElementById('info')
   const thankYouMessageDOM = document.getElementById('thanks')
+  const noSubmitMessageDOM = document.getElementById('no-submit-msg')
+
+  // show no-submit message if not enough details
+  if (!name.trim() || !email.trim() || !message.trim()) {
+    noSubmitMessageDOM.style.display = 'unset'
+    setTimeout(() => {
+      noSubmitMessageDOM.style.display = 'none'
+    }, 3000)
+    return
+  }
 
   const domItems = {
     nameDOM,
     emailDOM,
     messageDOM,
-    infoMessageDOM,
+    // infoMessageDOM,
     thankYouMessageDOM
   }
   handleFormBehavior({
@@ -55,13 +65,13 @@ form.addEventListener('submit', (e) => {
   })
 
   fetch('https://contact-form-python.azurewebsites.net/api/orchestrators/HelloOrchestrator', {
-      method: 'POST',
-      mode: 'no-cors',
-      body,
-      headers: {
-        'Content-type': 'application/json; charset=UTF-8'
-      }
-    })
+    method: 'POST',
+    mode: 'no-cors',
+    body,
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8'
+    }
+  })
     .catch(err => {
       console.error(err)
     })
