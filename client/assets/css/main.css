@@ -3036,6 +3036,19 @@ input, select, textarea {
 				font-size: 0.9em;
 			}
 
+			.features.projects article h3.major {
+				text-align: center;
+			}
+
+			.features.projects article .tags {
+				margin: 1em 0;
+				text-align: center;
+			}
+
+			.features.projects article .tags p.chip {
+				margin: 0.1em;
+			}
+
 				.features article p.chip.vertical {
 					display: block;
 					background-color: #2e3141;
@@ -3059,6 +3072,14 @@ input, select, textarea {
 					border-radius: 5px 5px 0 0;
 					width: 50%;
 					height: 50%;
+					margin: 1.75em;
+				}
+
+				.features.projects article .image img {
+					border-radius: 5px 5px 0 0;
+					width: 50%;
+					height: 50%;
+					max-height: 7em;
 					margin: 1.75em;
 				}
 
@@ -4096,6 +4117,10 @@ input, select, textarea {
 		}
 
 		#footer .inner p#thanks {
+			display: none;
+		}
+
+		#footer .inner p#no-submit-msg {
 			display: none;
 		}
 
