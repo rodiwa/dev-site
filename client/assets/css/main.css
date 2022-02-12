@@ -3038,6 +3038,8 @@ input, select, textarea {
 
 			.features.projects article h3.major {
 				text-align: center;
+				padding-top: 1.5em;
+				padding-bottom: 1.5em;
 			}
 
 			.features.projects article .tags {
@@ -3077,10 +3079,10 @@ input, select, textarea {
 
 				.features.projects article .image img {
 					border-radius: 5px 5px 0 0;
-					width: 50%;
+					width: unset;
 					height: 50%;
-					max-height: 7em;
-					margin: 1.75em;
+					max-height: 10em;
+					margin: 1.75em 1.75em 0 1.75em;
 				}
 
 		@media screen and (max-width: 980px) {
@@ -3106,6 +3108,14 @@ input, select, textarea {
 					margin-top: -1.5em;
 					width: calc(100% + 3em);
 				}
+
+				.features.projects article .image {
+					margin-bottom: unset;
+				}
+
+				/* .features.projects article h3.major {
+					padding-bottom: 1em;
+				} */
 
 		}
 
