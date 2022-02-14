@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,600|Source+Sans+Pro:300,600,300italic,600italic");
 
 /*
 	Solid State by HTML5 UP
@@ -200,7 +200,7 @@ input, select, textarea {
 			display: block;
 			font-family: Raleway, Helvetica, sans-serif;
 			font-size: 0.8em;
-			font-weight: 700;
+			font-weight: 600;
 			letter-spacing: 0.1em;
 			margin: 0 0 2em 0;
 			text-transform: uppercase;
@@ -262,7 +262,7 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
 		font-family: Raleway, Helvetica, sans-serif;
-		font-weight: 700;
+		font-weight: 600;
 		letter-spacing: 0.1em;
 		margin: 0 0 1em 0;
 		text-transform: uppercase;
@@ -2178,7 +2178,7 @@ input, select, textarea {
 		display: block;
 		font-family: Raleway, Helvetica, sans-serif;
 		font-size: 0.8em;
-		font-weight: 700;
+		font-weight: 600;
 		letter-spacing: 0.1em;
 		margin: 0 0 0.7em 0;
 		text-transform: uppercase;
@@ -2882,7 +2882,7 @@ input, select, textarea {
 		display: inline-block;
 		font-family: Raleway, Helvetica, sans-serif;
 		font-size: 0.8em;
-		font-weight: 700;
+		font-weight: 600;
 		height: 3.75em;
 		letter-spacing: 0.1em;
 		line-height: 3.75em;
@@ -3169,7 +3169,7 @@ input, select, textarea {
 		#header nav {
 			font-family: Raleway, Helvetica, sans-serif;
 			font-size: 0.8em;
-			font-weight: 700;
+			font-weight: 600;
 			height: 3em;
 			letter-spacing: 0.1em;
 			line-height: 3em;
@@ -3392,7 +3392,7 @@ input, select, textarea {
 					display: block;
 					font-family: Raleway, Helvetica, sans-serif;
 					font-size: 0.8em;
-					font-weight: 200;
+					font-weight: 300;
 					letter-spacing: 0.1em;
 					line-height: 1.85em;
 					padding: 0.75em 0;
@@ -3519,7 +3519,7 @@ input, select, textarea {
 			opacity: 1;
 			font-family: Raleway, Helvetica, sans-serif;
 			font-size: 1em;
-			font-weight: 200;
+			font-weight: 300;
 			letter-spacing: 0.1em;
 			line-height: 2;
 			/* text-transform: uppercase; */
@@ -3642,7 +3642,7 @@ input, select, textarea {
 		#wrapper > header p {
 			font-family: Raleway, Helvetica, sans-serif;
 			font-size: 1em;
-			font-weight: 200;
+			font-weight: 300;
 			letter-spacing: 0.1em;
 			line-height: 2;
 			/* text-transform: uppercase; */
