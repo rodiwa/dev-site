@@ -3499,6 +3499,7 @@ input, select, textarea {
 			font-size: 2.25em;
 			margin-bottom: 0.8em;
 			padding-bottom: 0.4em;
+			transition: unset; /* disable banner transition */
 		}
 
 		#banner p {
@@ -3525,6 +3526,7 @@ input, select, textarea {
 			letter-spacing: 0.1em;
 			line-height: 2;
 			/* text-transform: uppercase; */
+			transition: unset; /* disable banner transition */
 		}
 
 		@media screen and (max-width: 1280px) {
