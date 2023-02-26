@@ -3440,6 +3440,18 @@ input, select, textarea {
 			opacity: 1;
 		}
 
+/* Info Red */
+	
+	div.info.red {
+		background-color: black;
+		padding: 1em;
+		margin: 1em 0 1em 0;
+		border: 2px dashed yellow;
+		border-radius: 5px;
+		text-align: center;
+	}
+
+
 /* Banner */
 
 	#banner {
